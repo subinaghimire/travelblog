@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Swiper -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    /> -->
+    <!-- === Swiper CSS === -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle-min.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
     <!-- fontawesome cdn  -->
     <link
       rel="stylesheet"
@@ -14,13 +31,15 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./productstyle.css" />
 
     <title>✈Global Destination🏝</title>
   </head>
   <body>
     <div class="wrapper">
-      <!-- global message -->
-      <section class="global">
+
+       <!-- global message -->
+       <section class="global">
         <div class="container">
           <span></span>
           <div>
@@ -40,7 +59,253 @@
           </div>
         </div>
       </section>
-      <!-- header section  -->
+
+      
+
+      <!-- New Section -->
+      <div class="banner">
+        <div class="navbar">
+            <!-- <img src="./assets/Global Logo1.png" alt="" class="logo"> -->
+            <ul>
+                <li><a href="#">Flight</a></li>
+                <li><a href="#">Holidays</a></li>
+                <li><a href="#">Deals</a></li>
+                <!-- <li class="dropdown">
+                  
+                  <button class="dropbtn">More 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <a class="dropdown-content" href="">Services</a>
+                  <a class="dropdown-content" href="">Careers</a>
+                  <a class="dropdown-content" href="">Offers</a>
+                </li> -->
+
+                <!-- <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li> -->
+
+                    <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li> -->
+
+                    <!-- <li>
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Action</button>
+                          <button class="dropdown-item" type="button">Another action</button>
+                          <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                      </div>
+                    </li> -->
+                  </ul>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>GLOBAL DESTINATION</h1>
+            <!-- <p>EXPLORE THE UNKNOWN! </p> -->
+            <h3> Your Perfectly Packaged Centre </h3>
+            <div>
+                <button class="signup-btn" type="button"><span class="cover"></span>SIGN UP</button>
+                <button class="login-btn" type="button"><span class="cover"></span>LOG IN</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Choose Option Section -->
+      <section class="option">
+     <div class="container">
+        
+         <h3 class="text"> Where's your next desired destination?</h3>
+          <div class="option-list">
+            <div class="options">
+              <label>Select your desired country</label>
+              <hr>
+              <div class="option-content">
+              <select name="country" id="country" class="country">
+                <option value="Japan">Japan</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Maldives" >Maldives</option>
+                <option value="Canada" selected>Canada</option>
+              </select>
+            </div>
+            </div>
+            <!-- <div class="options">
+            <label>Select your desired city</label>
+            <hr>
+            <select name="city" id="city" class="country">
+              <option value="Japan">Tokyo</option>
+              <option value="Thailand">Phuket</option>
+              <option value="Maldives" >Mali</option>
+              <option value="Canada" selected>Toronto</option>
+            </select>
+          </div> -->
+
+            <div class="options">
+              <label>Select desired package</label>
+              <hr>
+              <select name="package" id="package" class="country">
+                <option value="Japan">Single Package</option>
+                <option value="Thailand">Couple Package</option>
+                <option value="Maldives" >Family Package</option>
+                <option value="Canada" selected>Group Package</option>
+              </select></div>
+            
+
+          </div>
+          </div>
+
+        </div>
+      </section>
+
+
+    <section class="product"> 
+        <h1 class="product-category"><b>Top Trending Holiday Deals</b></h2>
+        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/2.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/11.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/14.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/17.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/8.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/9.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/6.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/7.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/14.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <!-- <span class="discount-tag">50% off</span> -->
+                    <img src="assets/15.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-description">a short line about the cloth..</p>
+                    <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+     
+      <!-- header section 
       <header>
         <div class="container">
           <div class="logo">
@@ -57,64 +322,163 @@
       </header>
 
       <!-- hero section  -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-content">
           <h1>Welcome to Global Destination</h1>
           <hr />
           <p>
             Time to explore New world </p>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Choose Option Section -->
-      <section class="option">
-        <div class="container">
-         <h3>Where's your next desired destination?</h3>
-          <div class="option-list">
-            <div class="options">
-              <label>Select your desired country</label>
-              <hr>
-              <select name="country" id="country">
-                <option value="Japan">Japan</option>
-                <option value="Thailand">Thailand</option>
-                <option value="Maldives" >Maldives</option>
-                <option value="Canada" selected>Canada</option>
-              </select>
-            </div>
-            <div class="options">
-            <label>Select your desired city</label>
-            <hr>
-            <select name="city" id="city">
-              <option value="Japan">Tokyo</option>
-              <option value="Thailand">Phuket</option>
-              <option value="Maldives" >Mali</option>
-              <option value="Canada" selected>Toronto</option>
-            </select>
-          </div>
-
-            <div class="options">
-              <label>Select desired package</label>
-              <hr>
-              <select name="package" id="package">
-                <option value="Japan">Single Package</option>
-                <option value="Thailand">Couple Package</option>
-                <option value="Maldives" >Family Package</option>
-                <option value="Canada" selected>Group Package</option>
-              </select></div>
-            
-
-          </div>
-          </div>
-
+      <!-- Hover Section -->
+      <div class="hovercard">  
+      <div class="card-area"> 
+        <div class="wrappers">
+          <h1>Quick and easy trip planner</h3>
+          <br>
+          <p>Explore the top destination in Australia</p>
+          <br>
+          <div class="icons">
+           
+          <i class="fa-solid fa-city"></i>
+          <small>City</small>
+        
+   
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <small>Beach</small>
         </div>
-      </section>
+
+          <div class="box-area">
+            <div class="box">
+              <img src="assets/16.jpg" alt="">
+              <div class="overlay">
+                <h3>Mountaineering</h3>
+                <p>Toowomba</p>
+                <a href="#">Book Now</a>
+              </div>
+            </div>
+           
+            <div class="box">
+              <img src="assets/11.jpg" alt="">
+              <div class="overlay">
+                <h3>HotAir Balloon</h3>
+                <p>Gold Coast</p>
+                <a href="#">Book Now</a>
+              </div>
+            </div>
+
+        
+
+            <div class="box">
+              <img src="assets/13.jpg" alt="">
+              <div class="overlay">
+                <h3>Scuba Diving</h3>
+                <p>Brisbane</p>
+                <a href="#">Book Now</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- New Card Slider -->
+    <!-- <section class="card_slider">
+      <div class="card__container swiper">
+        <div class="card__content">
+          <div class="swiper-wrapper">
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="assets/17.jpg" alt="" class="card__img">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">First Destination</h3>
+                  <p class="card__description">
+                    The lady who served us was excellent. Knowledgeable, patient and worked to get us what we wanted. We had a broad idea of what we wanted and she worked through all the different options to get us to a booking we are very happy with.
+                  </p>
+                  <a href="#" class="card__button">View More</a>
+               
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="assets/17.jpg" alt="" class="card__img">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Second Destination</h3>
+                  <p class="card__description">
+                    The lady who served us was excellent. Knowledgeable, patient and worked to get us what we wanted. We had a broad idea of what we wanted and she worked through all the different options to get us to a booking we are very happy with.
+                  </p>
+                  <a href="#" class="card__button">View More</a>
+               
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="assets/17.jpg" alt="" class="card__img">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Third Destination</h3>
+                  <p class="card__description">
+                    The lady who served us was excellent. Knowledgeable, patient and worked to get us what we wanted. We had a broad idea of what we wanted and she worked through all the different options to get us to a booking we are very happy with.
+                  </p>
+                  <a href="#" class="card__button">View More</a>
+               
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="assets/17.jpg" alt="" class="card__img">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Fouth Destination</h3>
+                  <p class="card__description">
+                    The lady who served us was excellent. Knowledgeable, patient and worked to get us what we wanted. We had a broad idea of what we wanted and she worked through all the different options to get us to a booking we are very happy with.
+                  </p>
+                  <a href="#" class="card__button">View More</a>
+               
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+              <div class="card__image">
+                <img src="assets/17.jpg" alt="" class="card__img">
+                <div class="card__shadow"></div>
+              </div>
+              <div class="card__data">
+                <h3 class="card__name">Fifth Destination</h3>
+                  <p class="card__description">
+                    The lady who served us was excellent. Knowledgeable, patient and worked to get us what we wanted. We had a broad idea of what we wanted and she worked through all the different options to get us to a booking we are very happy with.
+                  </p>
+                  <a href="#" class="card__button">View More</a>
+               
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+
+     
       
       
       <!-- latest post section  -->
       <section class="latest">
         <div class="container">
-          <h2>Latest posts</h2>
+          <h1><b>Latest posts</b></h1>
           <hr />
+          <br>
+
           <main class="main">
             <div class="articles">
               <article>
@@ -130,9 +494,8 @@
                     <small>20-02-2020</small>
                     <p>
                       When you’re ready to travel again, we’ll be ready to welcome you.
-                       As the world adjusts to new travel norms and expectations,
-                        we’re enhancing the experience for you – our hotel guests 
-                        – by redefining cleanliness and supporting well-being throughout your stay.
+                      
+                      
                        
                     </p>
                     <button class="btn">Read More...</button>
@@ -151,9 +514,8 @@
                     <i class="fa-solid fa-calendar-days"></i>
                     <small>20-02-2020</small>
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Inventore ut magnam voluptas facilis omnis aut
-                      repellendus, ratione sequi qui magni...
+                      Margaret River is both a region and a bustling market town famed for its wine.
+                    
                     </p>
                     <button class="btn">Read More...</button>
                   </div>
@@ -171,9 +533,7 @@
                     <i class="fa-solid fa-calendar-days"></i>
                     <small>20-02-2020</small>
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Inventore ut magnam voluptas facilis omnis aut
-                      repellendus, ratione sequi qui magni...
+                      Melbourne’s earned its spot as one of the great big cities of the world. 
                     </p>
                     <button class="btn">Read More...</button>
                   </div>
@@ -207,7 +567,7 @@
 
       <!-- Latest BJ Edit-->
       
-      <section class="testimonial">
+      <!-- <section class="testimonial">
         <div class="container">
           <h2>Testimonial</h2>
           <hr />
@@ -265,9 +625,7 @@
                     <i class="fa-solid fa-calendar-days"></i>
                     <small>20-02-2020</small>
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Inventore ut magnam voluptas facilis omnis aut
-                      repellendus, ratione sequi qui magni...
+                      The South Island town of Wanaka appeals to both adventure lovers and relaxation-minded travellers. Situated on the crystal-clear waters of New Zealand's fourth-largest lake, just a short drive from Mount Aspiring National Park, Wanaka is an ideal spot to go fishing, hiking, skiing, wine-tasting or golfing. The city also hosts Warbirds Over Wanaka, the largest three-day air show in the Southern Hemisphere.
                     </p>
                     <button class="btn">Read More...</button>
                   </div>
@@ -276,8 +634,323 @@
             </div>
           </main>
         </div>
+      </section> -->
+     
+
+
+      <!-- Recommendation  -->
+      <section>
+        <div class="container">
+          <h1><b>Recommendation Destination</b></h1>
+          <hr />
+          <br>
+          <div class="card-list">
+            <div class="card">
+              <img src="./assets/4.jpg" alt="" width="100%" />
+              <div class="container">
+                <h3>Jet Boat and Wilderness Walk Tour from Wanaka</h3>
+                <p>
+                  Discover the idyllic landscapes of Mount Aspiring National Park...
+                </p>
+                <button class="btn">
+                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/5.jpg" alt="" width="100%" />
+              <div class="container">
+                <h3>Dart River Jet Boat and Wilderness Experience</h3>
+                <p>
+                  Go deep into the Dart River wilderness without worrying about  ...
+                </p>
+                <button class="btn">
+                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/6.jpg" alt="" width="100%" />
+              <div class="container">
+                <h3>Lakeland Jet Boat Adventure - Clutha River</h3>
+                <p>
+                  With a naturalist guide by your side and all equipment included, you’ll...
+                </p>
+                <button class="btn">
+                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./assets/7.jpg" alt="" width="100%" />
+              <div class="container">
+                <h3>Wanaka Homestead Lodge and Cottages.</h3>
+                <p>
+                  The snow-capped mountains, lush forests, and waterfalls of the Mount Aspiring National...
+                </p>
+                <button class="btn">
+                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      
+
+      <!-- Carousel Section -->
+      <div class="carousel" oncontextmenu="return false">
+        <br>
+        <h2><b>Our Happy Customer Globally</b></h2>
+        <p>They can't be all perfect, but most of them are. Here are some of our favourite reviews. </p>
+        <br>
+        <hr>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-card text-center">
+              <img class="slide-card-img-top" src="assets/person2.jpg" alt="" />
+              <div class="slide-card-body">
+                <h5>
+                  Sam Smith <br />
+                  
+                </h5>
+                <p class="slide-card-text">
+                  “ The lady who served us was excellent. Knowledgeable, patient and worked as well as provided broad idea
+                   to get us what we wanted.”
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="slide-card text-center">
+              <img class="slide-card-img-top" src="assets/person3.jpg" alt="" />
+              <div class="slide-card-body">
+                <h5>
+                  Sofia Healy <br />
+                </h5>
+                <p class="slide-card-text">
+                  “ They were fabulous and listened to what we were looking for, provided various 
+                  options for us to consider politely ”
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="slide-card text-center">
+              <img class="slide-card-img-top" src="assets/person1.jpg" alt="" />
+              <div class="slide-card-body">
+                <h5>
+                  Ronne Galle <br />
+                  
+                </h5>
+                <p class="slide-card-text">
+                  “Representative was very helpful. Listened to what I had to say, 
+                  then offered booking potential for several different hotels.”
+                </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide">
+            <div class="slide-card text-center">
+              <img class="slide-card-img-top" src="assets/person3.jpg" alt="" />
+              <div class="slide-card-body">
+                <h5>
+                  Marie Stitt <br />
+                  
+                </h5>
+                <p class="slide-card-text">
+                  “ My trip was a little last minute but James from Queen Street made the 
+                  whole process seamless booking and stress-free. ”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      </div> 
+
+      <!-- subscribe section  -->
+      <section class="subs">
+        <div>
+          <h2>Subscribe to receive the latest articles!</h2>
+          <hr>
+          <br>
+          <form action="">
+            <input type="text" placeholder="your name" />
+            <input type="text" placeholder="your@email.com" />
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+      
+      
+      <!-- <div class="carousel">
+      <div class="slide-container swiper" >
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="cards swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/person1.jpg" alt="" class="card-img">
+                </div>
+            
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Lilly Smith</h2>
+                <p class="description">Connect and share experiences with a community of spirited explorers who care about the planet.</p>
+              <button class="button">View More</button>
+              </div>
+            </div>
+             2nd
+            <div class="cards swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/person1.jpg" alt="" class="card-img">
+                </div>
+            
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Lilly Smith</h2>
+                <p class="description">Connect and share experiences with a community of spirited explorers who care about the planet.</p>
+              <button class="button">View More</button>
+              </div>
+            </div>
+             3rd
+            <div class="cards swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/person1.jpg" alt="" class="card-img">
+                </div>
+            
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Lilly Smith</h2>
+                <p class="description">Connect and share experiences with a community of spirited explorers who care about the planet.</p>
+              <button class="button">View More</button>
+              </div>
+            </div>
+
+            <div class="cards swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="assets/person1.jpg" alt="" class="card-img">
+                </div>
+            
+              </div>
+
+              <div class="card-content">
+                <h2 class="name">Lilly Smith</h2>
+                <p class="description">Connect and share experiences with a community of spirited explorers who care about the planet.</p>
+              <button class="button">View More</button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div> 
+       -->
+
+
+
+      <!--  footer  -->
+      <footer>
+
+        <section class="footer">
+          <div class="container1">
+            <h1><b>Global Destination 🏝</b></h1>
+            <br>
+            <br>
+            <hr />
+            
+            <br>
+
+  
+            <main class="main1">
+              <div class="services">
+                <div class="article">
+                  <div class="footerlink">
+                    <div>
+                      <div >
+                        <a href="#"> Home </a>
+                      </div>
+                    <br>
+                    
+                      <div >
+                        <a href="#"> About Us </a>
+                      </div>
+                      <br>
+                      <div >
+                        <a href="#"> Contact Us </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="side">
+                  <div class="socialmedia1">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                      <small>Facebook</small>
+                  </div>
+                  <br>
+                  <div class="socialmedia1">
+                    <a
+                    href="https://www.linkedin.com/in/subina-ghimire/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                      <small>Linkedin</small>
+                  </div>
+                  <br>
+                  <div class="socialmedia1">
+                    <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i>
+              </a>
+                      <small>Youtube</small>
+                  </div>
+
+                </div>
+                </main>
+
+        &copy; Copy right all reserved. Made by Subina. 
+
+      </footer>
+    </div>
+
+    <script src="product.js"></script>
+  </body>
+  <!-- Swiper JS -->
+  <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+ 
+  <!-- BJ  -->
+
+   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
   $(document).ready(function(){
@@ -290,87 +963,4 @@
     });
   });
 </script> -->
-
-
-      <!-- Recommendation  -->
-      <section>
-        <div class="container">
-          <h2>Recommendation Destination</h2>
-          <hr />
-          <div class="card-list">
-            <div class="card">
-              <img src="./assets/4.jpg" alt="" width="100%" />
-              <div class="container">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo, ipsum?...
-                </p>
-                <button class="btn">
-                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="./assets/5.jpg" alt="" width="100%" />
-              <div class="container">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo, ipsum?...
-                </p>
-                <button class="btn">
-                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="./assets/6.jpg" alt="" width="100%" />
-              <div class="container">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo, ipsum?...
-                </p>
-                <button class="btn">
-                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
-                </button>
-              </div>
-            </div>
-
-            <div class="card">
-              <img src="./assets/7.jpg" alt="" width="100%" />
-              <div class="container">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Explicabo, ipsum?...
-                </p>
-                <button class="btn">
-                  Explore <i class="fa-solid fa-arrow-right fa-beat"></i>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- subscribe section  -->
-      <section class="subs">
-        <div>
-          <h2>Subscribe to receive the latest articles!</h2>
-          <form action="">
-            <input type="text" placeholder="your name" />
-            <input type="text" placeholder="your@email.com" />
-            <input type="submit" />
-          </form>
-        </div>
-      </section>
-      <!-- footer  -->
-      <footer>
-        &copy; Copy right all reserved. Made by Subina. #DentedCode
-      </footer>
-    </div>
-  </body>
 </html>
